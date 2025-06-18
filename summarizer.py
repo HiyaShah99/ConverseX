@@ -37,10 +37,10 @@ model = whisper.load_model("base")
 result = model.transcribe(audio_path)
 transcript_text = result['text']
 
-print("📝 Transcription complete (first 500 chars):")
+print("Transcription complete (first 500 chars):")
 print(transcript_text[:500])
 
-# 🖼️ Extract Keyframes (Simple Sampling)
+# Extract Keyframes (Simple Sampling)
 import cv2
 
 def extract_keyframes(video_path, interval=5):
@@ -62,7 +62,7 @@ def extract_keyframes(video_path, interval=5):
 frames = extract_keyframes(video_path, interval=5)
 print(f"Extracted {len(frames)} keyframes.")
 
-# 🤖 BLIP: Caption Keyframes (Visual Summary)
+# BLIP: Caption Keyframes (Visual Summary)
 from PIL import Image
 from transformers import BlipProcessor, BlipForConditionalGeneration
 import torch
@@ -85,7 +85,7 @@ visual_summary = "\n".join([f"{i+1}. {cap}" for i, cap in enumerate(captions)])
 print("📸 Image Summary:")
 print(visual_summary)
 
-# 🧾 Combine & Summarize into PDF
+# Combine & Summarize into PDF
 from textwrap import wrap
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
@@ -105,9 +105,9 @@ def save_to_pdf(text, filename="video_summary.pdf"):
     c.save()
 
 save_to_pdf(combined_text)
-print("✅ PDF generated: video_summary.pdf")
+print("PDF generated: video_summary.pdf")
 
-# ⬇️ Download PDF
+# Download PDF
 from google.colab import files
 files.download("video_summary.pdf")
 
