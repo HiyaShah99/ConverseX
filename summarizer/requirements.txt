@@ -1,0 +1,13 @@
+Flask
+flask-cors
+whisper
+moviepy
+opencv-python
+transformers
+torch
+torchvision
+timm
+reportlab
+pytorch-lightning
+Pillow
+git+https://github.com/openai/whisper.git
