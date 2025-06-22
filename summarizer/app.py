@@ -18,6 +18,7 @@ def summarize():
     try:
         result = run_summarizer(video_path)
         response_data = {
+            "summary": result["summary"],              # ✅ include 3–5 line summary
             "transcript": result["transcript"],
             "visual_summary": result["visual_summary"]
         }
