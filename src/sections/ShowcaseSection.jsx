@@ -88,3 +88,77 @@ const AppShowcase = () => {
 };
 
 export default AppShowcase;
+// import { useEffect, useRef, useState } from "react";
+// import { Canvas, useFrame } from "@react-three/fiber";
+// import { OrbitControls } from "@react-three/drei";
+// import { Html } from "@react-three/drei";
+
+// import * as THREE from "three";
+// import { io } from "socket.io-client";
+
+// const socket = io("http://localhost:3000"); // match with your server port
+
+// const BUBBLE_RADIUS = 1;
+// const INTERACTION_DISTANCE = 3;
+
+// const Bubble = ({ id, position, username, isSpeaking }) => {
+//   const meshRef = useRef();
+
+//   useFrame(() => {
+//     if (meshRef.current) {
+//       // Float slightly
+//       meshRef.current.position.y += 0.005 * Math.sin(Date.now() / 300);
+//     }
+//   });
+
+//   return (
+//     <mesh position={position} ref={meshRef}>
+//       <sphereGeometry args={[BUBBLE_RADIUS, 32, 32]} />
+//       <meshStandardMaterial color={isSpeaking ? "orange" : "skyblue"} />
+//       <Html>
+//         <div style={{ color: "white", textAlign: "center" }}>{username}</div>
+//       </Html>
+//     </mesh>
+//   );
+// };
+
+// const ShowcaseSection = () => {
+//   const [bubbles, setBubbles] = useState([]);
+
+//   useEffect(() => {
+//     socket.on("users", (users) => {
+//       setBubbles(users);
+//     });
+
+//     // New user joins
+//     const username = "User" + Math.floor(Math.random() * 1000);
+//     socket.emit("join", { username });
+
+//     return () => socket.disconnect();
+//   }, []);
+
+//   return (
+//     <div style={{ height: "100vh" }}>
+//       <section id="meet" style={{ height: '100vh' }}>
+//   <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+//     <ambientLight intensity={0.5} />
+//     <OrbitControls />
+//     <pointLight position={[10, 10, 10]} />
+//     {bubbles.map((user) => (
+//           <Bubble
+//             key={user.id}
+//             id={user.id}
+//             username={user.username}
+//             position={user.position}
+//             isSpeaking={user.isSpeaking}
+//           />
+//         ))}
+//   </Canvas>
+//       </section>
+//     </div>
+
+
+//   );
+// };
+
+// export default ShowcaseSection;

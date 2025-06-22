@@ -1,18 +1,18 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Meet",
+    link: "https://bubble-room-gather.lovable.app/",
   },
   {
     name: "Experience",
     link: "#experience",
   },
   {
-    name: "Skills",
+    name: "Connect",
     link: "#skills",
   },
   {
-    name: "Testimonials",
+    name: "Feedback",
     link: "#testimonials",
   },
 ];
