@@ -1,4 +1,6 @@
 import { OrbitControls } from "@react-three/drei";
+
+
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 
@@ -12,6 +14,21 @@ const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
+    <div className="flex justify-start">
+    <div className="w-[700px] h-[500px] -ml-4"> {/* Try -ml-4 to -ml-10 */}
+    <iframe
+      title="Sci Fi Meeting Table"
+      frameBorder="0"
+      allow="autoplay; fullscreen; xr-spatial-tracking"
+      allowFullScreen
+      src="https://sketchfab.com/models/6f062ad428704a9b94459da4990b8594/embed?autostart=1"
+      className="w-full h-full"
+    ></iframe>
+
+
+  
+
+    
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
       {/* deep blue ambient */}
       <ambientLight intensity={0.2} color="#1a1a40" />
@@ -37,7 +54,11 @@ const HeroExperience = () => {
         </group>
       </Suspense>
     </Canvas>
+  </div>
+</div>
+
   );
 };
 
 export default HeroExperience;
+
