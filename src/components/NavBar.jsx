@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="#hero" className="logo">
+        <a href="#hero" className="logo border-b-2 border-white-100 text-white-100">
           CONVERSEX
         </a>
 
@@ -33,16 +33,16 @@ const NavBar = () => {
         <ul className="flex space-x-8">
           {[
             { label: 'Meet', href: 'https://preview--glow-bubble-chat-verse.lovable.app/' },
-            { label: 'Experience', href: '#' },
-            { label: 'Connect', href: '#' },
-            { label: 'Feedback', href: '#' },
+            // { label: 'Experience', href: '#' },
+            // { label: 'Connect', href: '#' },
+            // { label: 'Feedback', href: '#' },
           ].map((item, idx) => (
             <li key={idx} className="group relative cursor-pointer">
               <a
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-300 group-hover:text-white"
+                className="transition-colors duration-300 group-hover:text-white text-[20px]"
               >
                 {item.label}
               </a>

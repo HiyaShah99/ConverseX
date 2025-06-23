@@ -15,24 +15,22 @@ const HeroExperience = () => {
 
   return (
     <div className="flex justify-start">
-    <div className="w-[700px] h-[500px] -ml-4"> {/* Try -ml-4 to -ml-10 */}
+    <div className="w-[700px] h-[500px] -ml-4 pt-[80px]"> {/* Try -ml-4 to -ml-10 */}
     <iframe
       title="Sci Fi Meeting Table"
       frameBorder="0"
       allow="autoplay; fullscreen; xr-spatial-tracking"
-      allowFullScreen
+      // allowFullScreen
       src="https://sketchfab.com/models/6f062ad428704a9b94459da4990b8594/embed?autostart=1"
-      className="w-full h-full"
+      className="w-[80%] h-[80%] rounded-lg"
     ></iframe>
 
 
   
 
-    
+{/*     
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      {/* deep blue ambient */}
       <ambientLight intensity={0.2} color="#1a1a40" />
-      {/* Configure OrbitControls to disable panning and control zoom based on device type */}
       <OrbitControls
         enablePan={false} // Prevents panning of the scene
         enableZoom={!isTablet} // Disables zoom on tablets
@@ -53,7 +51,7 @@ const HeroExperience = () => {
           <Room />
         </group>
       </Suspense>
-    </Canvas>
+    </Canvas> */}
   </div>
 </div>
 

@@ -66,14 +66,11 @@ const Hero = () => {
         {/* RIGHT: 3D Model or Visual */}
         <figure>
           {/* <div className="hero-3d-layout"> */}
-          <div style={{ width: '100%', height: '500px' }}>
-            
-            <HeroExperience />
-          </div>
+          <HeroExperience />
         </figure>
       </div>
 
-      <AnimatedCounter />
+      {/* <AnimatedCounter /> */}
     </section>
   );
 };

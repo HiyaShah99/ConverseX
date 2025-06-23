@@ -47,13 +47,13 @@ import Footer from "./sections/Footer";
 const FullPage = () => (
   <>
     <Hero />
-    <ShowcaseSection />
-    <LogoShowcase />
-    <FeatureCards />
-    <Experience />
-    <TechStack />
-    <Testimonials />
-    <Contact />
+    {/* <ShowcaseSection /> */}
+    {/* <LogoShowcase /> */}
+    {/* <FeatureCards /> */}
+    {/* <Experience /> */}
+    {/* <TechStack /> */}
+    {/* <Testimonials /> */}
+    {/* <Contact /> */}
     <Footer />
   </>
 );
