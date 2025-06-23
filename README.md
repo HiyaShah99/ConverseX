@@ -1,4 +1,4 @@
-# CONVERSEX — Enhanced Networking with LinkedIn Live -->
+# CONVERSEX - Enhanced Networking with LinkedIn Live -->
 
 Welcome to **CONVERSEX**, a plugin and productivity platform that transforms LinkedIn Live streams into dynamic collaboration hubs — enabling real-time connection, enriched engagement, and powerful post-event nurturing.
 
